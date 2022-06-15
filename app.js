@@ -19,9 +19,10 @@ function PageTransitions() {
         const id = e.target.dataset.id;
         if(id){
             //remove selected from the other btns
-            sectBtns.forEach((btn) =>{
+            const btns = sectBtns[0].children;
+            for (let btn of btns){
                 btn.classList.remove('active')
-            })
+            }
             e.target.classList.add('active')
 
             //hide other sections
@@ -32,6 +33,13 @@ function PageTransitions() {
             const element = document.getElementById(id);
             element.classList.add('active');
         } 
+    })
+
+    //Toggle theme
+    const themeBtn = document.querySelector('.theme-btn');
+    themeBtn.addEventListener('click', ()=>{
+        let element = document.body;
+        element.classList.toggle('light-mode')
     })
 }
 
