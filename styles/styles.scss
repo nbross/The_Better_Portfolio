@@ -663,10 +663,28 @@ section {
                 margin-left: 1.5rem;
             }
         }
+        
 
-        .submit-btn {
-            display: flex !important;
-            justify-content: flex-start !important;
+        .contact-form {
+            .btn-1 {
+                width: 300px !important;
+                height: 100px !important;
+                border: none !important;
+                color: white !important;
+                background-color: #D91414 !important;
+                border-radius: 4px !important;
+                box-shadow: inset 0 0 0 0 #f9e506 !important;
+                transition: ease-out 0.3s !important;
+                font-size: 2rem !important;
+                outline: none !important; 
+            }
+            
+            .btn-1:hover {
+                box-shadow: inset 300px 0 0 0 #f9e506;
+                cursor: pointer;
+                color: #000;
+            }
+
         }
     }
 }
@@ -753,3 +771,4 @@ button{
         }
     }
 }
+
